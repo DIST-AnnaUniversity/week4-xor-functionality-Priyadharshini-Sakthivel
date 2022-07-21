@@ -1,7 +1,7 @@
 #implementation of xor through neurons
 import numpy as np
 def calculate_layer1(x,w1):
-    x = X.reshape(1,3) #reshape x
+    x = x.reshape(1,3) #reshape x
     wt = np.transpose(w1) #find the transpose of w
     layer1 = np.dot(x,wt) # find the net
     layer1[layer1>0] = 1 #use bipolar discrete activation function
